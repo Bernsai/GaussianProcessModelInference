@@ -19,10 +19,13 @@ Gaussian Process approximations to tackle that big data problem:
         - partitions result from either clustering, change point detection or other partitioning methods
     - [2] is a short paper proposing the concept of GPM inference and the LARGe algorithm
     - in [2], we used an earlier version (v1) for evaluation based on Tensorflow 2.0
--  Lineage  GPM  Inference (LGI) [7]
+- Lineage  GPM  Inference (LGI) [7]
     - top-down approach for inferring GPMs, that utilizes both local and global approximations
     - partitions either result from change point detection (univariate data) or clustering (multivariate data)
     - in [7], we used a earlier version (v1) for evaluation based on Tensorflow 2.3
+
+We provide a thorough review of all our developed algorithms and the remaining state of the art in [8], 
+which uses our latest implementations and up-to-date libraries. 
 
 ## Implementation
 We implemented the given Algorithms and the general problem of automatic GPM inference using Python 3.9, Tensorflow 2.7 
@@ -58,3 +61,6 @@ Recognition (ICPR), 2020.
 
 [7] F. Berns and C. Beecks, Complexity-Adaptive Gaussian Process Model Inference for Large-Scale Data, 
 in SDM, SIAM, 2021.
+
+[8] F. Berns, J. D. Hüwel, and C. Beecks, Automated Model Inference for Gaussian Processes: 
+An Overview of State-of-the-Art Methods and Algorithms, in SN computer science, 3(4), 300, 2022.
